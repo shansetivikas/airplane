@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <title>js assignment 9.1</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+      <script>
+         function Airplane(model,capacity,maxspeed){
+         this.model=model;
+         this.capacity=capacity;
+         this.maxspeed=maxspeed;
+         
+         return this.model+"is model with "+this.capacity+"capacity with max speed "+this.maxspeed
+         
+         }
+         
+         //creating airplane objects
+         Airplane1 = new Airplane("kingfisher",100,150);
+         Airplane2 = new Airplane("airasia",50,120);
+         Airplane3 = new Airplane("airindia",130,190);
+         console.log(Airplane1);
+         console.log(Airplane2);
+         console.log(Airplane3);
+         
+         
+         //Modfying capacity value for objects
+         Airplane1.capacity=Airplane1.capacity+10;
+         console.log(Airplane1.capacity);
+         Airplane2.capacity=Airplane2.capacity+10;
+         console.log(Airplane2.capacity);
+         Airplane3.capacity=Airplane3.capacity+10;
+         console.log(Airplane3.capacity);
+         
+         
+         //deleting maxspeed property
+         delete Airplane1.maxspeed;
+         delete Airplane2.maxspeed;
+         delete Airplane3.maxspeed;
+         
+         //adding a new property to the objects
+         Airplane1.avgspeed=600;
+         console.log(Airplane1.avgspeed=600);
+         Airplane2.avgspeed=600;
+         console.log(Airplane2.avgspeed=600);
+         Airplane3.avgspeed=600;
+         console.log(Airplane3.avgspeed=600);
+        
+       </script>
+   </body>
+</html>
